@@ -26,11 +26,28 @@ function INSTALAR {
         * )     clear; echo "" ; echo "" ; echo "SE HA INGRESADO UNA RESPUESTA ERRONEA. INTENTE NUEVAMENTE" ; sleep 3 ; INSTALAR ;; 
     esac
  
-     cp -r Recursos/ICONOS/* $RUTA_ICONOS
-     cp -r Recursos/TEMAS/* $RUTA_TEMAS
+     sudo cp -r Recursos/ICONOS/* $RUTA_ICONOS
+     sudo cp -r Recursos/TEMAS/* $RUTA_TEMAS
      echo "           Se ha instalado Correctamente la Personalizacion de XCFE."
      echo "           Seleccione los Temas en la Configuracion. Terminando el Instalador..."
  
+
+ 
+ 
+    # MI CONFIGURACION DE ARCHIVOS
+    
+    cp Recursos/uca.xml ~/.config/Thunar/
+ 
+    cp Recursos/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/ 
+
+    cp Recursos/xsettings.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+
+    cp Recursos/xfwm4.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+    
+    cd /etc
+    sudo wget https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts  
+    
+
 }
 
 

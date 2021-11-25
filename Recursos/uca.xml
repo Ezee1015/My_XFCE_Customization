@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>Terminal</icon>
+	<name>Abrir en un terminal</name>
+	<unique-id>1616584913727024-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Abrir terminal en la carpeta seleccionada</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>folder</icon>
+	<name>Abrir con permisos administrativos</name>
+	<unique-id>1616584913727267-2</unique-id>
+	<command>pkexec thunar %F</command>
+	<description>Abrir carpeta con derechos de administración</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>emblem-symbolic-link</icon>
+	<name>Crear enlace</name>
+	<unique-id>1616584913727515-3</unique-id>
+	<command>ln -s %f  &apos;Link to %n&apos;</command>
+	<description>Crear un enlace simbólico para cada elemento seleccionado</description>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+</action>
+<action>
+	<icon>gnome-run</icon>
+	<name>Suma de verificación SHA256</name>
+	<unique-id>1616584913727546-4</unique-id>
+	<command>mint-sha256sum %f</command>
+	<description>Comprobar la suma de verificación SHA256 para el archivo seleccionado.</description>
+	<patterns>*.iso;*.ISO</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>gtk-find</icon>
+	<name>Buscar</name>
+	<unique-id>1616584913727826-5</unique-id>
+	<command>catfish %f</command>
+	<description>Buscar archivos</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>pgp-keys</icon>
+	<name>Encriptar</name>
+	<unique-id>1618098911737008-1</unique-id>
+	<command>gpg -c --no-symkey-cache --cipher-algo AES256 %f</command>
+	<description>Encripta Archivos</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>pgp-keys</icon>
+	<name>Des-Encriptar</name>
+	<unique-id>1618099206123505-2</unique-id>
+	<command>gpg %f</command>
+	<description>desencripta Archivos .gpg</description>
+	<patterns>*.gpg</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>
