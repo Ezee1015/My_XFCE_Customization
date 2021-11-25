@@ -28,12 +28,8 @@ function INSTALAR {
  
      sudo cp -r Recursos/ICONOS/* $RUTA_ICONOS
      sudo cp -r Recursos/TEMAS/* $RUTA_TEMAS
-     echo "           Se ha instalado Correctamente la Personalizacion de XCFE."
-     echo "           Seleccione los Temas en la Configuracion. Terminando el Instalador..."
- 
-
- 
- 
+     
+     
     # MI CONFIGURACION DE ARCHIVOS
     
     cp Recursos/uca.xml ~/.config/Thunar/
@@ -48,7 +44,10 @@ function INSTALAR {
     sudo rm hosts
     sudo wget https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts  
     
-
+    clear
+    echo "           Se ha instalado Correctamente la Personalizacion de XCFE."
+    echo "           Seleccione los Temas en la Configuracion. Terminando el Instalador..."
+ 
 }
 
 
@@ -61,7 +60,7 @@ function MENU {
     done
     
     echo "" ; echo ""
-    read -p "Desea Instalar Mi Configuracion de VIM? (S/N)>  " respuesta
+    read -p "Desea Instalar Mi Configuracion de XFCE? (S/N)>  " respuesta
     clear
     echo "" ; echo ""
 
