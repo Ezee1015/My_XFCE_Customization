@@ -45,6 +45,7 @@ function INSTALAR {
     cp Recursos/xfwm4.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
     
     cd /etc
+    sudo rm hosts
     sudo wget https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts  
     
 
