@@ -1,14 +1,14 @@
 # My_XFCE_Customization
 Mi customizacion de XFCE (Temas e Iconos)
 
-#REQUISITOS
+## REQUISITOS
 Se requeriran los siguientes paquetes:
 ```
 wget
 git
 ```
 
-#INSTALACION
+## INSTALACION
 Proceso de Instalacion:
 ```
 git clone https://www.github.com/Ezee1015/My_XFCE_Customization
