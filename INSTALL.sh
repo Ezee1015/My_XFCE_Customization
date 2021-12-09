@@ -46,7 +46,7 @@ function INSTALAR {
     
     clear
     echo "           Se ha instalado Correctamente la Personalizacion de XCFE."
-    echo "           Seleccione los Temas en la Configuracion. Terminando el Instalador..."
+    echo "           Reinicie el equipo. Terminando el Instalador..."
  
 }
 
